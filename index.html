@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	</head>
+	<body>
+		<div class="top">
+		    <div class="ncm">
+		    	
+		    </div>
+		</div>
+		<div class="head">
+			<div class="head1">
+				<div class="logo">
+					<img src="img/img/logo.png"/>
+				</div>
+				<div class="head2">
+					<ul class="cv">
+						<li class="btn-active"  style="margin-left: 0px;">Home</li>
+						<li>About Us</li>
+						<li>Services</li>
+						<li>Portfolio</li>
+						<li>Pricing</li>
+						<li>Contact</li>
+						
+					</ul>
+				</div>
+				<script type="text/javascript"  src="js/jquery-1.11.1.js"></script>
+				<script type="text/javascript">
+				$(".cv li").click(function(){
+				//为按钮添加样式
+				$(this).addClass("btn-active")
+				.siblings()
+				.removeClass("btn-active");
+				
+				})
+				</script>	
+				
+			</div>
+		</div>
+		<div class="container">
+	    <div class="tab" >
+			<ul>
+			   <li class="we1 bj"></li>
+			   <li class="we2 bj"></li>
+			  
+			</ul>
+	    </div>
+        <div  class="box">
+	        <div class="appear dv" style="display: block; ">
+	        	
+	        	 <div class="flex-caption">
+                    <h3><b>Quality Touch</b></h3> 
+					<p>  <b>Doloribus omnis minus temporibus perferquam</b></p> 
+					 
+                </div>
+	        	
+	        </div>
+	        <div class="appear df" style="display: none; ">
+	        	 <div class="flex-caption">
+                    <h3>High Performence</h3> 
+					<p> <b>Lorem ipsum dolo amet, consectetur  provident</b></p> 
+					 
+                </div>
+	        	
+	        </div>
+	      
+        </div>
+	</div>
+	<script>
+		var lis = document.querySelectorAll(".bj");
+		var divs = document.querySelectorAll(".appear");
+		var i = 1;
+		var int=setInterval("aa()",2000);
+			function aa(){
+				j=i-1;
+				if(i==lis.length){
+		    	i = 0;
+		    	j=1;
+		    	}
+				
+				lis[i].index = i;
+                     
+					 lis[i].index.className = "selected";
+				     
+                     divs[lis[i].index].style.display = "block";
+                     lis[lis[i].index].style.background = "red";
+						lis[j].className = "";
+						divs[j].style.display = "none";
+						lis[j].style.background="deepskyblue";
+				i++;
+			}
+	</script>
+		<div class="vbxm">
+			<div class="vbxmn">
+				<h3>Welcome to Macro Technologies</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt eius magni provident, doloribus omnis minus temporibus perferendis nesciunt quam repellendus nulla
+						 nemo ipsum odit corrupti.</p>
+			</div>
+		</div>
+		<div class="cvbnm">
+			<div class="cvbnmn">
+				<div class="cbnmn">
+					<img src="img/img/tab1.png"/>
+				</div>
+				<div class="cbnmna">
+					 <h2>
+              Our Best Products
+            </h2>
+            
+            <p style="margin-top: 0px;"> 
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ablic jiener. natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ablic jiener. natus error sit voluptatem accusantiu.
+            </p>
+            <p> 
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ablic jiener. natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ablic jiener. natus error sit voluptatem accusantiu.
+            </p>
+            <p> 
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ablic jiener.
+            </p>
+           
+            <a href="#" class="lineBtn">
+              Request Quote
+            </a>
+				</div>
+			</div>
+		</div>
+		<div class="bcnnc">
+			<div class="b">
+				<div class="bb">
+					 <h2>About Us</h2>
+						<p>Curabitur aliquet quam id dui posuere blandit. Donec sollicitudin molestie malesuada Pellentesque <br>ipsum id orci porta dapibus. Vivamus suscipit tortor eget felis porttitor volutpat.</p>
+						
+						<p>Grids is a responsive Multipurpose Template. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquet quam id dui posuere blandit. Donec sollicitudin molestie malesuada. Pellentesque in ipsum id orci porta.</p> 
+						<p>Grids is a responsive Multipurpose Template. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquet quam id dui posuere blandit.</p> 
+						<a href="#" class="linetn">Read More</a>
+				</div>
+				<div class="bbb">
+					
+				</div>
+			</div>
+			
+		</div>
+		<div class="bootom">
+			<div class="bbbok">
+				<div class="a">
+					<h5 class="widgetheading">Our Contact</h5>
+					<p style="padding-top: 0px;">
+					Macro company Inc<br>
+					JC Main Road, Near Silnile tower<br>
+					 Pin-21542 NewYork US.</address>
+					</p> 
+					<p>
+						 (123) 456-789 - 1255-12584 <br>
+						 email@domainname.com
+					</p>
+				</div>
+				<div class="a">
+					<h5 class="wid">Quick Links</h5>
+					<ul class="ddd">
+						<li style="margin-top: 0px;"><a href="#">Latest Events</a></li>
+						<li><a href="#">Terms and conditions</a></li>
+						<li><a href="#">Privacy policy</a></li>
+						<li><a href="#">Career</a></li>
+						<li><a href="#">Contact us</a></li>
+					</ul>
+				</div>
+				<div class="a">
+					<h5 class="widgetheading">Latest posts</h5>
+					<ul class="link-list">
+						<li><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
+						<li><a href="#">Pellentesque et pulvinar enim. Quisque at tempor ligula</a></li>
+						<li><a href="#">Natus error sit voluptatem accusantium doloremque</a></li>
+					</ul>
+				</div>
+				<div class="a">
+					<h5 class="widgetheading">Recent News</h5>
+					<ul class="link-list">
+						<li><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
+						<li><a href="#">Pellentesque et pulvinar enim. Quisque at tempor ligula</a></li>
+						<li><a href="#">Natus error sit voluptatem accusantium doloremque</a></li>
+					</ul>
+				</div>
+				
+			</div>
+			<div class="vbnmck">
+				<p class="dddd">
+							Copyright &copy; 2016.Company name All rights reserved.More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a>
+			</p>
+			</div>
+			
+		</div>
+	</body>
+</html>
